@@ -14,7 +14,7 @@ model = joblib.load("random_forest_orientation.pkl")
 st.set_page_config(page_title="Orientation Post-Bac", layout="centered")
 st.markdown("<h1 style='color: #004aad;'>🔍 Prédiction de bon/mauvais choix de filière</h1>", unsafe_allow_html=True)
 st.markdown("<h4>💡 Remplissez les caractéristiques de l'étudiant :</h4>", unsafe_allow_html=True)
-kb = pd.read_excel("C:/INSEEDS/ORIEN.xlsx")
+kb = pd.read_excel("ORIEN.xlsx")
 # 🎛️ Menus déroulants
 villes = sorted(kb['ville_post_bac'].unique())
 ville = st.selectbox("Dans quelle ville Avez vous eu votre Bac?", options=villes)
