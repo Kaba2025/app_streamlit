@@ -12,7 +12,7 @@ import seaborn as sns
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score, classification_report, confusion_matrix, roc_curve, roc_auc_score
 # Charger les données
-df = pd.read_excel("C:/INSEEDS/ORIEN.xlsx")
+df = pd.read_excel("ORIEN.xlsx")
 
 # Aperçu rapide
 print(df.shape)
