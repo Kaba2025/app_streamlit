@@ -7,7 +7,8 @@ import joblib
 import pandas as pd
 
 # 🔐 Charger le meilleur modèle
-model = joblib.load(r"C:\INSEEDS\PROJET AFTER BAC\random_forest_orientation.pkl")
+model = joblib.load("random_forest_orientation.pkl")
+
 
 # 🖼️ Interface
 st.set_page_config(page_title="Orientation Post-Bac", layout="centered")
